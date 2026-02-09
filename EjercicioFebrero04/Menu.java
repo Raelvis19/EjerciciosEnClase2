@@ -21,6 +21,7 @@ public class Menu {
                 case 1:
                     ejercicioCuenta();
                     pausa();
+
                     break;
                 case 2:
                     ejercicioEmpleados();
@@ -68,9 +69,7 @@ public class Menu {
         A obj = new B();
         System.out.println("Valor de x: " + obj.x);
 
-        // Explicacion:
-        // Se muestra 10 porque el tipo de referencia es A.
-        // Los atributos NO son polimorficos, solo los métodos.
+    
     }
 
     // EJERCICIO 4
