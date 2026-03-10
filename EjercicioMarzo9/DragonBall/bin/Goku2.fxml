@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="640.0"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="RegistroController">
+
+    <children>
+
+        <AnchorPane prefHeight="400.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+
+            <children>
+
+                <Rectangle arcHeight="5.0" arcWidth="5.0"
+                           fill="#ff1f1f"
+                           height="43.0"
+                           layoutX="39.0"
+                           layoutY="36.0"
+                           stroke="WHITE"
+                           strokeType="INSIDE"
+                           width="539.0" />
+
+                <Label alignment="CENTER"
+                       layoutX="77.0"
+                       layoutY="40.0"
+                       text="REGISTRO DE PERSONAJES DRAGON BALL Z"
+                       textAlignment="CENTER"
+                       textFill="WHITE">
+
+                    <font>
+                        <Font name="Segoe UI Semibold" size="24.0"/>
+                    </font>
+
+                </Label>
+
+                <Text layoutX="52.0" layoutY="128.0" text="Nombre:">
+                    <font>
+                        <Font name="Arial" size="21.0"/>
+                    </font>
+                </Text>
+
+                <Text layoutX="55.0" layoutY="171.0" text="Raza:">
+                    <font>
+                        <Font name="Arial" size="21.0"/>
+                    </font>
+                </Text>
+
+                <Text layoutX="54.0" layoutY="220.0" text="Poder:">
+                    <font>
+                        <Font name="Arial" size="21.0"/>
+                    </font>
+                </Text>
+
+                <Text layoutX="53.0" layoutY="263.0" text="Planeta:">
+                    <font>
+                        <Font name="Arial" size="21.0"/>
+                    </font>
+                </Text>
+
+                <Text layoutX="52.0" layoutY="302.0" text="Tecnica:">
+                    <font>
+                        <Font name="Arial" size="21.0"/>
+                    </font>
+                </Text>
+
+                <Text layoutX="57.0" layoutY="349.0" text="Edad:">
+                    <font>
+                        <Font name="Arial" size="21.0"/>
+                    </font>
+                </Text>
+
+                <TextField fx:id="txtNombre"
+                           promptText="Ingresa el nombre"
+                           layoutX="145.0"
+                           layoutY="97.0"
+                           prefHeight="27.0"
+                           prefWidth="255.0"/>
+
+                <MenuButton fx:id="menuRaza"
+                            layoutX="145.0"
+                            layoutY="154.0"
+                            prefWidth="255.0"
+                            text="Seleccione la Raza">
+
+                    <items>
+                        <MenuItem text="Saiyajin"/>
+                        <MenuItem text="Humano"/>
+                        <MenuItem text="Namekiano"/>
+                        <MenuItem text="Androide"/>
+                        <MenuItem text="Bio-Androide"/>
+                        <MenuItem text="Majin"/>
+                        <MenuItem text="Hibrido"/>
+                    </items>
+
+                </MenuButton>
+
+                <TextField fx:id="txtPoder"
+                           promptText="Ingresa el poder"
+                           layoutX="145.0"
+                           layoutY="188.0"
+                           prefHeight="27.0"
+                           prefWidth="255.0"/>
+
+                <TextField fx:id="txtPlaneta"
+                           promptText="Ingresa el planeta"
+                           layoutX="145.0"
+                           layoutY="234.0"
+                           prefHeight="27.0"
+                           prefWidth="255.0"/>
+
+                <TextField fx:id="txtTecnica"
+                           promptText="Ingresa la tecnica"
+                           layoutX="145.0"
+                           layoutY="272.0"
+                           prefHeight="27.0"
+                           prefWidth="255.0"/>
+
+                <TextField fx:id="txtEdad"
+                           promptText="Ingresa la edad"
+                           layoutX="145.0"
+                           layoutY="317.0"
+                           prefHeight="27.0"
+                           prefWidth="255.0"/>
+
+                <Button layoutX="537.0"
+                        layoutY="333.0"
+                        prefHeight="35.0"
+                        prefWidth="71.0"
+                        text="Agregar"
+                        style="-fx-background-color: green; -fx-text-fill: white;"
+                        onAction="#agregarPersonaje"/>
+
+                <Button layoutX="537.0"
+                        layoutY="290.0"
+                        prefHeight="35.0"
+                        prefWidth="71.0"
+                        text="Regresar"
+                        style="-fx-background-color: red; -fx-text-fill: white;"
+                        onAction="#volverMenu"/>
+
+            </children>
+
+        </AnchorPane>
+
+    </children>
+
+</VBox>
+
