@@ -1,7 +1,7 @@
 
 /* ===== FONDO GENERAL ===== */
 .root{
-    -fx-background-color: linear-gradient(to bottom,#1a1a1a,#000000);
+    -fx-background-color: linear-gradient(to bottom,#ff0000,#000000);
 }
 
 /* ===== TITULO ===== */
